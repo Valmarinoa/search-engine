@@ -15,6 +15,7 @@ function App() {
       throw Error(response.statusText);
     }
     const json = await response.json();
+    console.log(json);
     setResults(json.query.search);
     setSearchInfo(json.query.searchinfo);
   };
